@@ -36,3 +36,14 @@ extension TableViewController: UITableViewDataSource {
         return cell
     }
 }
+
+// タップ時にアラートを表示させる
+extension TableViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        TableView.deselectRow(at: indexPath, animated: true)
+        let item = items[indexPath.row]
+        let alert = UIAlertController(title: "タイトル", message: item, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
+}
