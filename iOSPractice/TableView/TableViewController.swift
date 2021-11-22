@@ -17,8 +17,6 @@ class TableViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // よくわからない
-        TableView.dataSource = self
     }
 }
 
