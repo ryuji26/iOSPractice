@@ -9,6 +9,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func tableViewButtonTapped(_ sender: Any) {
+        self.performSegue(withIdentifier: "toTableViewPractice", sender: self)
+    }
+
+    @IBAction func cutomTableViewTapped(_ sender: Any) {
+        self.performSegue(withIdentifier: "toCustomTableView", sender: self)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
