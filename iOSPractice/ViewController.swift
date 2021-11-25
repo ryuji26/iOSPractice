@@ -17,6 +17,11 @@ class ViewController: UIViewController {
         self.performSegue(withIdentifier: "toCustomTableView", sender: self)
     }
 
+
+    @IBAction func xibTableCellTapped(_ sender: Any) {
+        self.performSegue(withIdentifier: "toXibTableCell", sender: self)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

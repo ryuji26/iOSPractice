@@ -32,6 +32,14 @@
                                     <action selector="cutomTableViewTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kTo-0n-Vp2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Lo-uy-wL8">
+                                <rect key="frame" x="155.5" y="180" width="103" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="XibTableCell"/>
+                                <connections>
+                                    <action selector="xibTableCellTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W0Y-w1-mEB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -39,6 +47,8 @@
                             <constraint firstItem="rxT-MU-zUM" firstAttribute="top" secondItem="g3Q-Lb-xCM" secondAttribute="bottom" constant="10" id="9Mq-F1-u3l"/>
                             <constraint firstItem="rxT-MU-zUM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EWz-TZ-SWj"/>
                             <constraint firstItem="g3Q-Lb-xCM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KC7-j2-TAB"/>
+                            <constraint firstItem="6Lo-uy-wL8" firstAttribute="top" secondItem="rxT-MU-zUM" secondAttribute="bottom" constant="10" id="On8-Z3-XEN"/>
+                            <constraint firstItem="6Lo-uy-wL8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VQu-dd-Sty"/>
                             <constraint firstItem="g3Q-Lb-xCM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="pEM-jV-Mm9"/>
                         </constraints>
                     </view>
@@ -46,6 +56,7 @@
                     <connections>
                         <segue destination="MKT-nn-CJs" kind="show" identifier="toTableViewPractice" id="j2q-Li-c5c"/>
                         <segue destination="eOU-I4-lJU" kind="show" identifier="toCustomTableView" id="YuB-WM-8iS"/>
+                        <segue destination="jrW-tR-jOF" kind="show" identifier="toXibTableCell" id="3n8-6o-0tD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -88,7 +99,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p9H-lL-lRx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5096" y="100"/>
+            <point key="canvasLocation" x="4580" y="100"/>
+        </scene>
+        <!--XibTableCell-->
+        <scene sceneID="vKl-8W-KPh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="XibTableCell" id="jrW-tR-jOF" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Rhj-FY-TG3"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9zI-2z-MLh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4580" y="207"/>
         </scene>
     </scenes>
     <resources>
