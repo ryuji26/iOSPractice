@@ -40,15 +40,25 @@
                                     <action selector="xibTableCellTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W0Y-w1-mEB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmZ-Mc-iur">
+                                <rect key="frame" x="122" y="221" width="170" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="CustomCollectionView"/>
+                                <connections>
+                                    <action selector="customCollectionViewTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZQD-n7-X8c"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="rxT-MU-zUM" firstAttribute="top" secondItem="g3Q-Lb-xCM" secondAttribute="bottom" constant="10" id="9Mq-F1-u3l"/>
                             <constraint firstItem="rxT-MU-zUM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EWz-TZ-SWj"/>
+                            <constraint firstItem="wmZ-Mc-iur" firstAttribute="top" secondItem="6Lo-uy-wL8" secondAttribute="bottom" constant="10" id="HDN-3K-hUs"/>
                             <constraint firstItem="g3Q-Lb-xCM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KC7-j2-TAB"/>
                             <constraint firstItem="6Lo-uy-wL8" firstAttribute="top" secondItem="rxT-MU-zUM" secondAttribute="bottom" constant="10" id="On8-Z3-XEN"/>
                             <constraint firstItem="6Lo-uy-wL8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VQu-dd-Sty"/>
+                            <constraint firstItem="wmZ-Mc-iur" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dr8-OU-a1n"/>
                             <constraint firstItem="g3Q-Lb-xCM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="pEM-jV-Mm9"/>
                         </constraints>
                     </view>
@@ -57,6 +67,7 @@
                         <segue destination="MKT-nn-CJs" kind="show" identifier="toTableViewPractice" id="j2q-Li-c5c"/>
                         <segue destination="eOU-I4-lJU" kind="show" identifier="toCustomTableView" id="YuB-WM-8iS"/>
                         <segue destination="jrW-tR-jOF" kind="show" identifier="toXibTableCell" id="3n8-6o-0tD"/>
+                        <segue destination="hyU-PY-P0E" kind="show" identifier="toCustomCollectionView" id="EE2-ZW-k5l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -110,6 +121,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9zI-2z-MLh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4580" y="207"/>
+        </scene>
+        <!--CustomCollectionViewCell-->
+        <scene sceneID="yQK-FM-zoL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CustomCollectionViewCell" id="hyU-PY-P0E" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Wt9-FA-IlR"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FP7-Cd-ZMS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4579" y="298"/>
         </scene>
     </scenes>
     <resources>

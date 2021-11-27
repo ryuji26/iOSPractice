@@ -22,6 +22,9 @@ class ViewController: UIViewController {
         self.performSegue(withIdentifier: "toXibTableCell", sender: self)
     }
 
+    @IBAction func customCollectionViewTapped(_ sender: Any) {
+        self.performSegue(withIdentifier: "toCustomCollectionView", sender: self)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
