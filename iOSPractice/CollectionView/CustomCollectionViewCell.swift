@@ -9,12 +9,18 @@ import UIKit
 
 class CustomCollectionViewCell: UICollectionViewCell {
 
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        self.ThumbnailImage.image = nil
+        self.commentLabel.text = ""
+    }
+
     @IBOutlet weak var ThumbnailImage: UIImageView!
     @IBOutlet weak var commentLabel: UILabel!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+
+    func setupCell(model: Model) {
+        commentLabel.text = model.title
+        ThumbnailImage.image = model.image
     }
 
 }

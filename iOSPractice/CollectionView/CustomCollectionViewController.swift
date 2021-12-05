@@ -9,7 +9,7 @@ import UIKit
 
 class CustomCollectionViewController: UIViewController {
 
-    let photos = ["1", "2", "3", "4", "5", "6", "7", "8"]
+    let models = Model.createModels()
     
     @IBOutlet weak var practiceCollectionView: UICollectionView!
 
@@ -17,24 +17,31 @@ class CustomCollectionViewController: UIViewController {
         super.viewDidLoad()
         let nib = UINib(nibName: "CustomCollectionViewCell", bundle: nil)
         practiceCollectionView.register(nib, forCellWithReuseIdentifier: "customCell")
+
+        let sectionInsets = UIEdgeInsets(top: 10.0, left: 2.0, bottom: 2.0, right: 2.0)
+        let itemsPerRow: CGFloat = 3
+
+        let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
+        let availableWidth = view.frame.width - paddingSpace
+        let widthPerItem = availableWidth / itemsPerRow
+
+        let layout = UICollectionViewFlowLayout()
+//        layout.itemSize = CGSize(width: practiceCollectionView.frame.width, height: 100)
+        layout.itemSize = CGSize(width: widthPerItem, height: widthPerItem + 42)
+        practiceCollectionView.collectionViewLayout = layout
     }
 
 }
 
 extension CustomCollectionViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return photos.count
+        return models.count;
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = practiceCollectionView.dequeueReusableCell(withReuseIdentifier: "customCell", for: indexPath) as! CustomCollectionViewCell
 
-        let imageView = cell.contentView.viewWithTag(1) as! UIImageView
-        let cellImage = UIImage(named: photos[indexPath.row])
-        imageView.image = cellImage
-
-        let label = cell.contentView.viewWithTag(2) as! UILabel
-        label.text = photos[indexPath.row]
+        cell.setupCell(model: models[indexPath.row])
 
         return cell
     }
@@ -43,13 +50,5 @@ extension CustomCollectionViewController: UICollectionViewDataSource {
 extension CustomCollectionViewController: UICollectionViewDelegate {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
-    }
-}
-
-extension CustomCollectionViewController: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let horizontalSpace: CGFloat = 2
-        let cellSize: CGFloat = self.view.bounds.width/2 - horizontalSpace
-        return CGSize(width: cellSize, height: cellSize)
     }
 }
