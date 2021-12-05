@@ -16,13 +16,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWQ-Nx-BNT">
-                        <rect key="frame" x="19" y="10" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VlI-jo-Ijj">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9qe-I5-Elv">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VlI-jo-Ijj">
                         <rect key="frame" x="19" y="49" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -32,15 +29,17 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="kWQ-Nx-BNT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="5X2-nu-AOQ"/>
+                <constraint firstItem="9qe-I5-Elv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0g3-6G-tAR"/>
+                <constraint firstItem="9qe-I5-Elv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="AEX-ij-8Ai"/>
+                <constraint firstAttribute="trailing" secondItem="9qe-I5-Elv" secondAttribute="trailing" id="PAF-AU-yRd"/>
                 <constraint firstItem="VlI-jo-Ijj" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="RH2-de-Tyo"/>
                 <constraint firstAttribute="bottom" secondItem="VlI-jo-Ijj" secondAttribute="bottom" constant="10" id="dRQ-Ql-H6g"/>
-                <constraint firstItem="kWQ-Nx-BNT" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ykT-9h-XnG"/>
+                <constraint firstAttribute="bottom" secondItem="9qe-I5-Elv" secondAttribute="bottom" id="h9R-ml-YtF"/>
             </constraints>
             <size key="customSize" width="285" height="280"/>
             <connections>
+                <outlet property="ThumbnailImage" destination="9qe-I5-Elv" id="bpv-HL-m79"/>
                 <outlet property="commentLabel" destination="VlI-jo-Ijj" id="Mmx-6w-Axu"/>
-                <outlet property="nameLabel" destination="kWQ-Nx-BNT" id="rGU-NG-Gc2"/>
             </connections>
             <point key="canvasLocation" x="307.24637681159425" y="38.839285714285715"/>
         </collectionViewCell>

@@ -53,11 +53,22 @@
                     </view>
                     <connections>
                         <outlet property="practiceCollectionView" destination="1MB-nl-tD3" id="fBP-dp-FpU"/>
+                        <segue destination="peE-jx-3w4" kind="show" identifier="toSubView" id="lwT-s5-81H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="100"/>
+        </scene>
+        <!--SubView-->
+        <scene sceneID="FQV-fs-zzJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SubView" id="peE-jx-3w4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Qcv-pU-fvY"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="14d-pc-DzL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="978" y="100"/>
         </scene>
     </scenes>
     <resources>

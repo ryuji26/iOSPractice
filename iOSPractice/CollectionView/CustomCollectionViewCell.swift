@@ -9,7 +9,7 @@ import UIKit
 
 class CustomCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var ThumbnailImage: UIImageView!
     @IBOutlet weak var commentLabel: UILabel!
     
     override func awakeFromNib() {

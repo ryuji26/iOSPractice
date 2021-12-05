@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46531637275CFD7500CCBC2A /* SubView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46531636275CFD7500CCBC2A /* SubView.storyboard */; };
+		46531639275CFD8E00CCBC2A /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46531638275CFD8E00CCBC2A /* SubViewController.swift */; };
 		46B0A799274AB0A300D42786 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0A798274AB0A300D42786 /* AppDelegate.swift */; };
 		46B0A79B274AB0A300D42786 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0A79A274AB0A300D42786 /* SceneDelegate.swift */; };
 		46B0A79D274AB0A300D42786 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0A79C274AB0A300D42786 /* ViewController.swift */; };
@@ -29,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46531636275CFD7500CCBC2A /* SubView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SubView.storyboard; sourceTree = "<group>"; };
+		46531638275CFD8E00CCBC2A /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 		46B0A795274AB0A300D42786 /* iOSPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B0A798274AB0A300D42786 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46B0A79A274AB0A300D42786 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,8 +136,10 @@
 			children = (
 				46B0A7ED2750D5E400D42786 /* CustomCollectionViewCell.swift */,
 				46B0A7F32750D62F00D42786 /* CustomCollectionViewController.swift */,
+				46531638275CFD8E00CCBC2A /* SubViewController.swift */,
 				46B0A7F12750D60D00D42786 /* CustomCollectionViewCell.storyboard */,
 				46B0A7EE2750D5E400D42786 /* CustomCollectionViewCell.xib */,
+				46531636275CFD7500CCBC2A /* SubView.storyboard */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -198,6 +204,7 @@
 			files = (
 				46B0A7A5274AB0A600D42786 /* LaunchScreen.storyboard in Resources */,
 				46B0A7E7274F7C5C00D42786 /* XibTableViewCell.xib in Resources */,
+				46531637275CFD7500CCBC2A /* SubView.storyboard in Resources */,
 				46B0A7AD274AB15400D42786 /* TableViewPractice.storyboard in Resources */,
 				46B0A7F22750D60D00D42786 /* CustomCollectionViewCell.storyboard in Resources */,
 				46B0A7E9274F7EC200D42786 /* XibTableCell.storyboard in Resources */,
@@ -217,6 +224,7 @@
 			files = (
 				46B0A79D274AB0A300D42786 /* ViewController.swift in Sources */,
 				46B0A7EF2750D5E400D42786 /* CustomCollectionViewCell.swift in Sources */,
+				46531639275CFD8E00CCBC2A /* SubViewController.swift in Sources */,
 				46B0A799274AB0A300D42786 /* AppDelegate.swift in Sources */,
 				46B0A79B274AB0A300D42786 /* SceneDelegate.swift in Sources */,
 				46B0A7AF274AB17000D42786 /* TableViewController.swift in Sources */,
