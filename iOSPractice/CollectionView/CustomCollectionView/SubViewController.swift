@@ -9,8 +9,15 @@ import UIKit
 
 class SubViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
+
+    var selectedImg: UIImage!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        imageView.image = selectedImg
+        imageView.contentMode = UIView.ContentMode.scaleAspectFit
     }
 
 }

@@ -25,6 +25,9 @@ class ViewController: UIViewController {
     @IBAction func customCollectionViewTapped(_ sender: Any) {
         self.performSegue(withIdentifier: "toCustomCollectionView", sender: self)
     }
+    @IBAction func simpleCollectionViewTapped(_ sender: Any) {
+        self.performSegue(withIdentifier: "toSimpleCollectionView", sender: self)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

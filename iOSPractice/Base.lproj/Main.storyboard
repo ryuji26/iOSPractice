@@ -48,6 +48,14 @@
                                     <action selector="customCollectionViewTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZQD-n7-X8c"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1L-i3-yee">
+                                <rect key="frame" x="125" y="262" width="164" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="SimpleCollectionView"/>
+                                <connections>
+                                    <action selector="simpleCollectionViewTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6gt-9o-iVW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -58,6 +66,8 @@
                             <constraint firstItem="g3Q-Lb-xCM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KC7-j2-TAB"/>
                             <constraint firstItem="6Lo-uy-wL8" firstAttribute="top" secondItem="rxT-MU-zUM" secondAttribute="bottom" constant="10" id="On8-Z3-XEN"/>
                             <constraint firstItem="6Lo-uy-wL8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VQu-dd-Sty"/>
+                            <constraint firstItem="U1L-i3-yee" firstAttribute="top" secondItem="wmZ-Mc-iur" secondAttribute="bottom" constant="10" id="Wz8-pj-ll2"/>
+                            <constraint firstItem="U1L-i3-yee" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dMi-lH-KOB"/>
                             <constraint firstItem="wmZ-Mc-iur" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dr8-OU-a1n"/>
                             <constraint firstItem="g3Q-Lb-xCM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="pEM-jV-Mm9"/>
                         </constraints>
@@ -68,6 +78,7 @@
                         <segue destination="eOU-I4-lJU" kind="show" identifier="toCustomTableView" id="YuB-WM-8iS"/>
                         <segue destination="jrW-tR-jOF" kind="show" identifier="toXibTableCell" id="3n8-6o-0tD"/>
                         <segue destination="hyU-PY-P0E" kind="show" identifier="toCustomCollectionView" id="EE2-ZW-k5l"/>
+                        <segue destination="IdW-tS-k0U" kind="show" identifier="toSimpleCollectionView" id="AWk-Kf-09Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -131,6 +142,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FP7-Cd-ZMS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4579" y="298"/>
+        </scene>
+        <!--SimpleCollectionView-->
+        <scene sceneID="5B4-pm-Ro8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SimpleCollectionView" id="IdW-tS-k0U" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="fpb-66-0L5"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3YT-yg-mbW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4580" y="391"/>
         </scene>
     </scenes>
     <resources>
